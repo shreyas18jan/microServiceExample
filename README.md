@@ -42,7 +42,7 @@ Add a RestController file, which describes your service. In the following exampl
 // RestController - Spring assumes this as REST Style Service.
 // It is a convenience annotation which is annotated with @Controller and @ResponseBody
 @RestController
-public class MicroServiceController {
+public class com.example.MicroServiceController {
 
     // RequestMapping - Annotation for mapping web requests onto methods in request-handling classes with flexible method signatures
     @RequestMapping("/")
@@ -60,7 +60,7 @@ This spring application should be made as stand-alone application, so we need to
 ```
 public static void main(String[] args) throws Exception {
 // This command will start the auto-configured Tomcat web server.
-SpringApplication.run(MicroServiceController.class, args);
+SpringApplication.run(com.example.MicroServiceController.class, args);
 }
 ```
 
